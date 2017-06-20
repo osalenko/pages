@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="io.github.bonigarcia:webdrivermanager:1.6.2" type="repository">
+    <properties maven-id="io.github.bonigarcia:webdrivermanager:1.6.2" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/webdrivermanager-1.6.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/slf4j-api-1.7.24.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/slf4j-simple-1.7.24.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/commons-io-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/gson-2.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/config-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/commons-lang3-3.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/httpclient-4.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/httpcore-4.4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/commons-codec-1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/jarchivelib-0.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/commons-compress-1.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/jsoup-1.10.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/guava-21.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/webdrivermanager-1.6.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../Pages/lib/webdrivermanager-1.6.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
