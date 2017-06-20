@@ -83,27 +83,14 @@ public class TestCases extends BaseTest {
         assertEquals(expectedTitle, actualText);*/
     }
 
-/*    private void checkBoxTest(WebElement chB1) throws InterruptedException {
-        WebElement chB2 = driver.findElement(By.xpath("/*//*[@id='checkboxes']/input[2]"));
-        boolean status2= chB2.isDisplayed();
-        System.out.println("Second checkBox is Displayed >>"+status2);
-        boolean enabled_status2=chB2.isEnabled();
-        System.out.println("Second checkBox is Enabled >>"+enabled_status2);
-        boolean selected_status2=chB2.isSelected();
-        System.out.println("Second checkBox is Selected >>"+selected_status2);
-        chB1.click();
-        boolean selected_status_new2=chB2.isSelected();
-        System.out.println("Second checkBox is Selected >>"+selected_status_new2);
-        Thread.sleep(4000);*/
-      @Test
+    @Test
     public void testx()throws InterruptedException
       {
           HomePage
           homepage = new HomePage(driver);
           driver.findElement(By.linkText("Checkboxes")).click();
-          homepage.checkBoxTest("//*[@id='checkboxes']/input[2]");
-          homepage.checkBoxTest("//*[@id='checkboxes']/input[1]");
-
+          homepage.checkBoxDefSelFalse("//*[@id='checkboxes']/input[1]");
+          homepage.checkBoxDefSelTrue("//*[@id='checkboxes']/input[2]");
 
       }
 

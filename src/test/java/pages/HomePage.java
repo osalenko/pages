@@ -11,6 +11,7 @@ import java.util.Random;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+import static org.testng.AssertJUnit.assertFalse;
 
 /**
  * Created by SANYA on 5/20/2017.
@@ -127,27 +128,44 @@ public class HomePage {
 
 
     }
-
-    public void checkBoxTest(String xpath) throws InterruptedException
+    public void checkBoxDefSelTrue(String xpath) throws InterruptedException
     {
 
-        WebElement chB2 = driver.findElement(By.xpath(xpath));
+        WebElement chB = driver.findElement(By.xpath(xpath));
         Thread.sleep(3000);
-        boolean status2= chB2.isDisplayed();
+        boolean status2= chB.isDisplayed();
         System.out.println("CheckBox is Displayed >>"+status2);
-        boolean enabled_status2=chB2.isEnabled();
+        boolean enabled_status2=chB.isEnabled();
         System.out.println("CheckBox is Enabled >>"+enabled_status2);
-        boolean selected_status2=chB2.isSelected();
+        boolean selected_status2=chB.isSelected();
         System.out.println("CeckBox is Selected >>"+selected_status2);
-        assertEquals(selected_status2,chB2.isSelected());
-        chB2.click();
-        boolean selected_status_new2=chB2.isSelected();
+       // assertEquals(selected_status2,chB.isSelected());
+        assertTrue(chB.isSelected());
+        chB.click();
+        assertFalse(chB.isSelected());
+        boolean selected_status_new2=chB.isSelected();
         System.out.println("CheckBox is Selected after click  >>"+selected_status_new2);
         Thread.sleep(4000);
     }
 
 
+    public void checkBoxDefSelFalse(String xpath) throws InterruptedException
+    {
 
+        WebElement chB = driver.findElement(By.xpath(xpath));
+        boolean status= chB.isDisplayed();
+        System.out.println("CheckBox is Displayed >>"+status);
+        boolean enabled_status=chB.isEnabled();
+        System.out.println("CheckBox is Enabled >>"+enabled_status);
+        boolean selected_status=chB.isSelected();
+        System.out.println("CeckBox is Selected >>"+selected_status);
+        // assertEquals(selected_status2,chB.isSelected());
+        assertFalse(chB.isSelected());
+        chB.click();
+        assertTrue(chB.isSelected());
+        boolean selected_status_new=chB.isSelected();
+        System.out.println("CheckBox is Selected after click  >>"+selected_status_new);
+    }
 
 }
 
